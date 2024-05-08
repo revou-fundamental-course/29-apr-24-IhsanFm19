@@ -3,9 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IhsanFm-Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="navigation-countainer">
+        <div><img src="asset/Travlora1.png"></div>
+
+        <nav>
+            <a>Home</a>
+            <a>Our Package</a>
+            <a>Call Us</a>
+        </nav>
+    </header>
+    <hr />
+
+    <article class="content-countainer">
+        <header>
+            <h1>Your Trusted Travel Agent's</h1>
+            <h4>Your hapiness is our hapiness</h4>
+        </header>
+
+        <section class="first-content">
+            <div class="first-item item-left">
+                <img class="img-slideshow" src="asset/Image1.jpg"/>
+                <img class="img-slideshow" src="asset/Image2.jpg"/>
+                <img class="img-slideshow" src="asset/Image3.jpg"/>
+                <button onclick="plusDivs(-1)"><</button>
+                <button onclick="plusDivs(1)">></button>
+                <p><i>"Ayo keliling dunia!!, simsalabim akan ku buat harimu penuh warna"</i></p>
+            </div>
+
+            <div class="first-item item-right">
+                <header>
+                    <h2>Contact Us</h2>
+                    <p>Sales akan menghubungi 1x24jam</p>
+                </header>
+
+                <section class="item-form">
+                    <form name="myForm" onsubmit="return validateForm()">
+                        <label><b>Your Name:</b></label><input type="text" placeholder="First and Last name" name="fname"/>
+                        <label><b>Email Address:</b></label><input type="text" placeholder="example@email.com" name="femail"/>
+                        <label for="interested"><b>What are you interested in? :</b></label>
+                        <div>
+                        <select class="option-box" id="interested">
+                            <option>Jalan-jalan ke luar Negeri</option>
+                            <option>Jalan-jalan ke dalam Negeri</option> 
+                            <option>Tidak pergi kemana-mana</option>
+                        </select>
+                        </div>
+
+                        <div>
+                        <input class="submit-box" type="submit" value="Send"/>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </section>
+
+        <section class="our-package">
+            <h1>Our Package</h1>
+        </section>
+
+        <section class="about-travel">
+            <div class="travel-logo">
+                <img src="asset/Japan.png"/>
+                <div>
+                    <h4>Jepang</h4>
+                    <p>Travel dan wisata di Jepang. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+            </div>
+
+            <div class="travel-logo">
+                <img src="asset/Germany.png"/>
+                <div>
+                    <h4>Jerman</h4>
+                    <p>Travel dan wisata di Jerman. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+            </div>
+
+            <div class="travel-logo">
+                <img src="asset/Chinese.png"/>
+                <div>
+                    <h4>China</h4>
+                    <p>Travel dan wisata di China. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+            </div>
+        </section>
+        <hr style="width: 128px">
+
+        <section class="about-travel">
+            <div class="travel-logo">
+                <img src="asset/France.png"/>
+                <div>
+                    <h4>Perancis</h4>
+                    <p>Travel dan wisata di Perancis. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+            </div>
+
+            <div class="travel-logo">
+                <img src="asset/Brazil.png"/>
+                <div>
+                    <h4>Brazil</h4>
+                    <p>Travel dan wisata di Brazil. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+            </div>
+
+            <div class="travel-logo">
+                <img src="asset/Spain.png"/>
+                <div>
+                    <h4>Spain</h4>
+                    <p>Travel dan wisata di Spanyol. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+            </div>
+        </section>
+        <hr/>
+
+        <section class="closing-statement">
+            <h1>Thankyou For Coming</h1>
+            <p>Mau kemana mana? Travlora solusinya. Akanku ajak kalian keliling dunia, simsalabim akan ku buat harimu penuh warna</p>
+            <button type="button">CALL TO ACTION</button>
+        </section>
+    </article>
+    <hr/>
+
+    <flooter class="flooter">
+        <h2>TRAVLORA</h2>
+        <p>Terms of Service Privacy Policy</p>
+        <p>&copy;2024 Travlora</p>
+    </flooter>
     
+    <script src="js/script.js"></script>
 </body>
 </html>
